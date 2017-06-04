@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
-	<title>Shiny Metal Marketing - Web Design</title>
-	<meta name="author" content="Megan Blevins">
-	<meta name="keywords" content="web, design, springfield, missouri">
-	<meta name="description" content="I'm a web designer in the Springfield, Missouri area specializing in non-profit and small business.">
+	<title>Shiny Metal Marketing</title>
+	<meta name="author" content="Shiny Metal Marketing">
+	<meta name="keywords" content="shiny metal marketing web design">
+	<meta name="description" content="Freelance Web Design in the Springfield, MO area.">
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,7 +19,6 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/simple-line-icons.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" media="all" />
 
 	<!-- Template CSS -->
 	<link href="css/style.css" rel="stylesheet">
@@ -24,14 +27,18 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800&amp;subsetting=all' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700,300' rel='stylesheet' type='text/css'>
 
-
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+		<script src="./js/respond.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
 
 </head>
 
 <body data-spy="scroll" data-target=".navigation">
 
 	<!-- Banner -->
-    <div id="banner" class="bg-grey">
+    <div id="banner" class="bg-grey arrow-bottom">
 		<!-- Start Header -->
 		<div id="header">
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -44,14 +51,14 @@
 							<span class="icon-bar"></span>
 						</button>
 						<!-- Start Logo / Text -->
-						<a class="navbar-brand text-logo" href="#"><img class="logo-img" src="img/robotimages/robot_logo.png">Shiny Metal Marketing</a>
+						<a class="navbar-brand text-logo" href="#"><img id="robot-head" src="img/robot_head.png"></i>Shiny Metal</a>
 						<!-- End Logo / Text -->
 					</div>
 					<!-- Start Navigation -->
 					<div class="navigation navbar-collapse collapse">
 						<ul class="nav navbar-nav menu-right">
 							<li class="active"><a href="#banner">Home</a></li>
-							<li><a href="#intro">About</a></li>
+							<li><a href="#intro">Intro</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#features">Services</a></li>
 							<li><a href="#contact">Contact</a></li>
@@ -62,37 +69,26 @@
 			</nav>
 		</div>
 		<!-- End Header -->
-
-		<div class="banner-content section bg=grey arrow-bottom">
+		<div class="banner-content">
 			<div class="container">
 				<div class="row">
 					<!-- Start Header Text -->
-					<div id="header-text" class="col-md-5">
-						<h1><span>Professional</span> Strong & Creative Online Presence.</h1>
+					<div class="col-md-6 col-sm-12">
+						<h1><span>Professional</span><br> Strong & Creative Online Presence.</h1>
 						<p>Working with you to create a stunning website that fits your unique business and needs. Each site is specifically tailored to create an engaging user experience to help grow your business.</p>
-						<p>Create your ideal web home with Shiny Metal Marketing.</p>
-						<ul class="banner-list">
-							<li><i class="fa fa-check"></i>Responsive Designs</li>
-							<li><i class="fa fa-check"></i>Creative</li>
-							<li><i class="fa fa-check"></i>Unique</li>
-							<li><i class="fa fa-check"></i>Online sales</li>
-							<li><i class="fa fa-check"></i>Event Calendars</li>
-						</ul>
 					</div>
 					<!-- End Header Text -->
-					<div class="col-md-7">
-							<img id="responsive-header-img" src="img/em_responsive_sm.png" class="img-responsive" alt="" title="">
-
+					<!-- Start Banner Optin Form-->
+						<div class="col-md-6">
+								<img id="responsive-header-img" src="img/em_responsive_sm.png" class="img-responsive" alt="Responsive Design by Shiny Metal" title="McKinney Music Therapy">
+						</div>
 					</div>
-					<!-- End Video -->
+					<!-- End Banner Optin Form -->
 				</div>
 			</div>
 		</div>
     </div>
 	<!-- End Banner -->
-
-
-
 
 	<!-- Intro -->
 	<section id="intro" class="section">
@@ -102,10 +98,10 @@
 					<h2>Create a web <span class="blue">home</span>.</h2>
 					<p>Working together, we'll create a design that will showcase and grow your business.</p>
 				</div>
-			</div> <!--/row-->
+			</div>
 			<div class="row">
 				<div class="col-lg-6 col-md-6">
-					<iframe ID="uwo-vid" width="448" height="252" src="https://www.youtube.com/embed/Njymf4xAu78" frameborder="0" allowfullscreen></iframe>
+					<img src="img/web-home.jpeg" class="img-responsive" id="web-home" alt="Create Your Web Home" title="Desktop">
 				</div>
 				<div class="col-lg-6 col-md-6">
 					<div class="features"><!-- Main Points -->
@@ -124,27 +120,36 @@
 						<p>As your business grows and changes, Shiny Metal Marketing will be there to make sure your online presence grows with you. A simple phone call or email will get your site moving at the speed of your business.</p>
 					</div>
 				</div>
-			</div> <!-- /row-->
-		</div><!--/container -->
-		</section>
-		<section id="about" class="bg-blue-pattern section70 white-text">
-			<div class="container">
-				<img id="robot" src="img/robotimages/robot_side_img.png" class="img-responsive" alt="" title="">
+			</div>
+			<hr class="separator60"><!-- Separator -->
+	</section>
+	<!-- End Intro -->
 
+	<!-- How It Works -->
+	<section id="how-it-works" class="section bg-blue-pattern white-text">
+		<div class="container">
 			<div class="row">
-
-				<div class="col-xs-12 col-sm-7">
-					<h2 class="headline">About Shiny Metal Marketing</h2>
+				<div class="col-lg-12">
+					<div class="headline">
+						<h2>About Shiny Metal Marketing</h2>
+					</div>
+				</div>
+			</div>
+			<div  class="row">
+				<div id="aboutme"class="col-md-9 col-sm-9">
 					<h3>Hi! I'm Megan Blevins.</h3>
 
 					<p> I created Shiny Metal Marketing because I love solving problems and helping people.</p><p> I started my web design journey working for the United Way of the Ozarks. I quickly discovered a love of creating unique and user friendly websites.</p>
 					<p>Let me help your business reach its potential with online marketing. The world is now online, and I want to help keep local and small businesses competitive by creating easy to use and visually appealing designs to support  business goals.</p>
 					<p></p>
 				</div>
-			</div> <!--/row-->
-				</div> <!--/container -->
-	</section> <!-- /about section -->
-
+				<div class="col-md-3 col-sm-3">
+					<img id="robot" src="img/robot_side_img.png" class="img-responsive" alt="Shiny Metal Robot" title="Shiny Metal Robot">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End How it Works -->
 
 	<!-- Portfolio -->
     <section id="portfolio" class="section bg-grey arrow-bottom">
@@ -158,41 +163,52 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-3">
 					<!-- Start Portfolio Item -->
-					<div class="hover-details portfolio-scroll">
-						<img class="img-responsive img-thumbnail" src="img/uw_thumb.png" alt="United Way of the Ozarks homepage" title="uwozarks.com" /><!-- Image Thumbnail  -->
-						<div class="img-cover">
-							<a href="https://youtu.be/Njymf4xAu78" class="img-zoom html5lightbox" data-gal="prettyPhoto"><i class="icon-magnifier"></i></a><!-- Large Image  -->
+					<div class="hover-details">
+						<img class="img-responsive img-thumbnail" src="img/uw_thumb.png" alt="UWOzarks.com from 2014" title="uwozarks.com thumbnail" /><!-- Image Thumbnail  -->
+						<div class="img-cover youtubevid">
+							<a href="#" class="img-zoom slvj-link-lightbox 2" data-videoid="Njymf4xAu78" data-videosite="youtube"><i class="icon-magnifier"></i></a><!-- Large Image  -->
 							<h3>United Way of the Ozarks</h3><!-- Image Description  -->
 						</div>
 					</div>
 					<!-- End Portfolio Item  -->
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-3">
 					<!-- Start Portfolio Item -->
-					<div class="hover-details portfolio-scroll">
-						<img class="img-responsive img-thumbnail" src="img/mar_thumb.png" alt="" title="" /><!-- Image Thumbnail  -->
+					<div class="hover-details">
+						<img class="img-responsive img-thumbnail" src="img/emily_thumb.png" alt="McKinneyMusicTherapy.com" title="McKinney Music Therapy Site" /><!-- Image Thumbnail  -->
 						<div class="img-cover">
-							<a href="https://youtu.be/goU9UD-4TPc" class="img-zoom html5lightbox" data-gal="prettyPhoto"><i class="icon-magnifier"></i></a><!-- Large Image  -->
-							<h3>Missouri Autism Report</h3><!-- Image Description  -->
+							<a href="http://mckinneymusictherapy.com" class="img-zoom" target="_blank"><i class="icon-magnifier"></i></a><!-- Large Image  -->
+							<h3>McKinneyMusicTherapy.com</h3><!-- Image Description  -->
 						</div>
 					</div>
 					<!-- End Portfolio Item  -->
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-3">
 					<!-- Start Portfolio Item -->
-					<div class="hover-details portfolio-scroll">
-						<img class="img-responsive img-thumbnail" src="img/emily_thumb.png" alt="Emily Blevins" title="emily_blevins_site" /><!-- Image Thumbnail  -->
+					<div class="hover-details">
+						<img class="img-responsive img-thumbnail" src="img/mar_thumb.png" alt="MissouriAutismReport.com" title="Missouri Autism Report" /><!-- Image Thumbnail  -->
 						<div class="img-cover">
-							<a href="https://youtu.be/x9iYi-1zZxA" class="img-zoom html5lightbox" data-gal="prettyPhoto"><i class="icon-magnifier"></i></a><!-- Large Image  -->
-							<h3>Emily Blevins, Music Therapy</h3><!-- Image Description  -->
+							<a href="http://moautismreport.com" target="_blank" class="img-zoom"><i class="icon-magnifier"></i></a><!-- Large Image  -->
+							<h3>MOAutismReport.com</h3><!-- Image Description  -->
 						</div>
 					</div>
 					<!-- End Portfolio Item  -->
 				</div>
-			</div> <!--/row-->
-		</div> <!--/container -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<!-- Start Portfolio Item -->
+					<div class="hover-details">
+						<img class="img-responsive img-thumbnail" src="img/megan_thumb.png" alt="MeganBlevins.com" title="MeganBlevins.com" /><!-- Image Thumbnail  -->
+						<div class="img-cover">
+							<a href="http://meganblevins.com" target="_blank" class="img-zoom"><i class="icon-magnifier"></i></a><!-- Large Image  -->
+							<h3>MeganBlevins.com</h3><!-- Image Description  -->
+						</div>
+					</div>
+					<!-- End Portfolio Item  -->
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- End Portfolio -->
 
@@ -208,39 +224,40 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-4 features"><!-- Start Feature -->
-					<i class="line-font blue icon-speech"></i><!-- Feature Icon -->
-					<h3>Brand Management</h3><!-- Feature Title -->
-					<p>If you're having trouble getting your message out there, I can work with you to create a strong, engaging message to your future customers.</p><!-- Feature Text -->
-				</div><!-- End Feature -->
-				<div class="col-md-4 col-sm-4 features">
-					<i class="line-font blue icon-pencil"></i>
-					<h3>Fully Customized Website</h3>
-					<p>I will work with you to create an exciting and unique website to compliment your growing business.</p>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 features"><!-- Start Feature -->
+						<i class="line-font blue icon-speech"></i><!-- Feature Icon -->
+						<h3>Brand Management</h3><!-- Feature Title -->
+						<p>If you're having trouble getting your message out there, I can work with you to create a strong, engaging message to your future customers.</p><!-- Feature Text -->
+					</div><!-- End Feature -->
+					<div class="col-md-4 col-sm-4 features">
+						<i class="line-font blue icon-pencil"></i>
+						<h3>Fully Customized Website</h3>
+						<p>I will work with you to create an exciting and unique website to compliment your growing business.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 features">
+						<i class="line-font blue icon-screen-smartphone"></i>
+						<h3>Responsive Designs</h3>
+						<p>Your customers are on the go, and looking for a website that can scale down and still look fantastic.</p>
+					</div>
 				</div>
-				<div class="col-md-4 col-sm-4 features">
-					<i class="line-font blue icon-screen-smartphone"></i>
-					<h3>Responsive Designs</h3>
-					<p>Your customers are on the go, and looking for a website that can scale down and still look fantastic.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4 features">
-					<i class="line-font blue icon-social-twitter"></i>
-					<h3>Social Media Consulting</h3>
-					<p>Social media is a great resource for business owners, but it can be tricky to keep current on how to best utilize this marketing tool. Let me help.</p>
-				</div>
-				<div class="col-md-4 col-sm-4 features">
-					<i class="line-font blue icon-basket-loaded"></i>
-					<h3>E-Commerce</h3>
-					<p>You know that online sales are important. Take that next step and make your own online store!</p>
-				</div>
-				<div class="col-md-4 col-sm-4 features">
-					<i class="line-font blue icon-heart"></i>
-					<h3>Support</h3>
-					<p>You won't be left high and dry after the site is up, I'll be here to keep your site and brand in top shape.</p>
-				</div>
-			</div> <!--/row-->
+				<div class="row">
+					<div class="col-md-4 col-sm-4 features">
+						<i class="line-font blue icon-social-twitter"></i>
+						<h3>Social Media Consulting</h3>
+						<p>Social media is a great resource for business owners, but it can be tricky to keep current on how to best utilize this marketing tool. Let me help.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 features">
+						<i class="line-font blue icon-basket-loaded"></i>
+						<h3>E-Commerce</h3>
+						<p>You know that online sales are important. Take that next step and make your own online store!</p>
+					</div>
+					<div class="col-md-4 col-sm-4 features">
+						<i class="line-font blue icon-heart"></i>
+						<h3>Support</h3>
+						<p>You won't be left high and dry after the site is up, I'll be here to keep your site and brand in top shape.</p>
+					</div>
+				</div> <!--/row-->
 		</div>
 	</section>
 	<!--End Features -->
@@ -283,6 +300,51 @@
 	</section>
 	<!--End Three Main Points -->
 
+	<!--Testimonials -->
+	<section id="testimonials" class="section bg-testimonial cover border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="headline">
+						<h2>Testimonials</h2>
+						<p>What are people saying about Shiny Metal Marketing?</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<!-- Start Testimonial Slider -->
+					<div class="carousel slide carousel-mod" data-ride="carousel" id="testimonial">
+						<div class="carousel-inner">
+							<!-- Testimonial #1  -->
+							<div class="item active">
+								<div class="testimonial-inner">
+									<img src="img/dayna_ault_testimonial.png" alt="Dayna Ault, MO Autism Report" title="Dayna Ault. MO Autism Report" /><!-- Testimonial Image  -->
+									<p>Megan Blevins has done a great job on our website. It looks better than I imagined it could be. She worked tirelessly helping me rework and rewrite various parts of the site. We feel blessed to find such a competent web builder.</p><!-- Tesimonial  -->
+									<small>Dayna Ault - MO Autism Report</small><!-- Testimonial Author  -->
+								</div>
+							</div>
+							<!-- End Testimonial #1  -->
+							<div class="item">
+								<div class="testimonial-inner">
+									<img src="img/emily_testimonial.png" alt="Emily McKinney" title="Emily M - McKinney Music therapy" /><!-- Testimonial Image  -->
+									<p>Megan worked fast to create a website that was perfect for me to get the word out about my business. She created a beautiful site that I'm proud to share with potential clients.</p><!-- Tesimonial  -->
+									<small>Emily McKinney - McKinney Music Therapy </small><!-- Testimonial Author  -->
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial Navigation  -->
+						<ol class="carousel-indicators">
+							<li data-target="#testimonial" data-slide-to="0" class="active"></li>
+							<li data-target="#testimonial" data-slide-to="1"></li>
+						</ol>
+						<!-- End Testimonial Navigation  -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Testimonials -->
 
 
 	<section id="contact" class="bg-grey black-text">
@@ -296,6 +358,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8">
+											<form action="https://formspree.io/meganjblevins@gmail.com" id="contactForm" name="sentMessage" novalidate="" method="POST">
                         <form name="sentMessage" id="contactForm" novalidate="">
                             <div class="row">
                                 <div class="col-md-6">
@@ -335,13 +398,12 @@
                             (417)718-4470</p>
                         <p>
                             <strong><i class="fa fa-envelope"></i>  Email Address</strong><br>
-                            megan@shinymetalmarketing.com</p>
+                            MeganJBlevins@gmail.com</p>
                         <p></p>
                     </div>
                 </div>
             </div>
         </section>
-
 
 	<!-- Footer Top -->
 	<section class="footer footer-top">
@@ -350,7 +412,8 @@
 				<!-- Footer Intro  -->
 				<div class="col-md-4">
 					<h3>Shiny Metal Marketing</h3>
-					<img src="img/robotimages/robot_logo.png" class="logo">
+					<p>Working with you to create a stunning website that fits your unique business and needs.</p>
+					<p> Each site is specifically tailored to create an engaging user experience to help grow your business.</p>
 				</div>
 				<!-- End Footer Intro  -->
 				<!-- Contact Details  -->
@@ -360,22 +423,11 @@
 						<ul class="contact-list">
 							<li><i class="icon-directions"></i>Ozark, MO</li>
 							<li><i class="icon-call-in"></i> (417)718-4470</li>
-							<li><i class="icon-envelope-open"></i><a href="mailto:mjclinefelter@gmail.com">mjclinefelter@gmail.com</a></li>
+							<li><i class="icon-envelope-open"></i><a href="mailto:MeganJBlevins@gmail.com">MeganJBlevins@gmail.com</a></li>
 						</ul>
 					</div>
 				</div>
 				<!-- End Contact Details  -->
-				<!-- Quick Links
-				<div class="col-md-2">
-					<h3>Quick Links</h3>
-					<ul class="quick-links">
-						<li><a href="#">Affiliate</a></li>
-						<li><a href="#">Disclaimer</a></li>
-						<li><a href="#">Terms &amp; Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
-				</div>
-End Quick links -->
 				<!-- Social Links -->
 				<div class="col-sm-3">
 					<h3>Stay in Touch!</h3>
@@ -396,7 +448,7 @@ End Quick links -->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-sm-6">
-					<p>&copy; Shiny Metal Marketing</p>
+					<p>&copy; Shiny Metal Marketing. All Right Reserved</p>
 				</div>
 			</div>
 		</div>
@@ -404,15 +456,11 @@ End Quick links -->
 	<!-- End Footer Bottom -->
 
 	<!-- Start Js Files -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script><!--jQuery is a Javascript library that greatly reduces the amount of code that you must write.-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script><!--Packed with many functionalies such as carousel slider, responsivity, tabs, drop downs, buttons, and many other features-->
-	<script src="js/modernizr.min.js" type="text/javascript"></script><!--Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.-->
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript" ></script><!-- Script for Lightbox Image  -->
-	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-	<script type="text/javascript" src="html5lightbox/jquery.js"></script>
-	<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
-	<script src="js/custom.js" type="text/javascript"></script><!-- Script File containing all customizations  -->
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/modernizr.min.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
 	<!-- End Js Files  -->
 
 </body>
